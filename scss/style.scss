@@ -1,0 +1,27 @@
+@import "normalize";
+@import "media_max";
+@import "variables";
+@import "mixins";
+
+body {
+   font-family: muli, sans-serif;
+   line-height: 1.5;
+   background-color: $bg-color;
+}
+section {
+   padding: 35px 0;
+   @include to768{padding: 20px 0;}
+}
+.container {
+   max-width: 940px;
+   margin: 0 auto;
+   padding: 0 20px;
+   @include to768{padding: 0 10px;}
+}
+
+
+
+
+@include upto1024 {
+   
+}
