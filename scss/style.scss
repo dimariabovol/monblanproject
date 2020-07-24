@@ -182,6 +182,34 @@ body {
    }
 }
 
+.qs-datepicker-container {
+   color: $text-color-d;
+}
+.qs-controls {
+   background: none;
+   padding: 10px 0 4px;
+}
+.qs-squares {margin: -2px;}
+.qs-square {
+   width: 30px;
+   height: 30px;
+   margin: 2px;
+   &.Sun {
+      background-color: #f7f7f7;
+   }
+}
+.qs-day {
+   color: $text-color-d;
+}
+.qs-current {
+   font-weight: 400;
+   color: $text-color-l;
+   text-decoration: none;
+   background-color: $hover-color;
+}
+.qs-outside-current-month {
+   color: #000;
+}
 
 // switcher
 .switcher {
@@ -410,6 +438,11 @@ body {
    .header-form__input:hover {
       background-color: #f7f7f7;
       transition: background-color .3s;
+   }
+   .qs-square:not(.qs-empty):not(.qs-disabled):not(.qs-day):not(.qs-active):hover {
+      background-color: $hover-color;
+      color: $text-color-l;
+      transition: all .3s;
    }
    .switcher__item:hover {
       .icon {
