@@ -5,22 +5,736 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>monblanpoject</title>
    <link rel="stylesheet" href="css/style.min.css">
+   <link rel="stylesheet" href="https://unpkg.com/js-datepicker/dist/datepicker.min.css">
 </head>
 <body>
    <div class="wrapper">
       <header class="header">
          <div class="container">
             <div class="header__body">
-               
+               <a href="#" class="header__logo">
+                  <img src="img/logo.png" alt="monblanproject">
+               </a>
+               <div class="header__content head-cnt">
+                  <div class="head-cnt__top">
+                     <span class="head-cnt__title">monblanproject</span>
+                     <span class="head-cnt__start">Start on 17-02-2016</span>
+                  </div>
+                  <div class="head-cnt__list">
+                     <div class="head-cnt__item">
+                        <strong>870</strong>posts
+                     </div>
+                     <div class="head-cnt__item">
+                        <strong>11,787</strong>followers
+                     </div>
+                     <div class="head-cnt__item">
+                        <strong>112</strong>following
+                     </div>
+                  </div>
+                  <form class="head-cnt__form header-form">
+                     <div class="header-form__block">
+                        <label for="#datepicker">Date</label>
+                        <input class="header-form__input header-form__input_start" id="datepicker" type="text" placeholder="from">
+                        <button class="header-form__close" type="reset"></button>
+                        <button class="header-form__btn" type="button"></button>
+                     </div>
+                     <div class="header-form__block">
+                        <input class="header-form__input header-form__input_end" id="datepicker" type="text" placeholder="to">
+                        <button class="header-form__close" type="reset"></button>
+                        <button class="header-form__btn"></button>
+                     </div>
+                  </form>
+               </div>
             </div>
          </div>
       </header>
       <main class="main">
-         
+         <div class="record">
+            <div class="container">
+               <div class="record__switcher switcher">
+                  <div class="switcher__item switcher__item_active">
+                     <svg class="icon icon-grid"><use xlink:href="#icon-grid"></use>
+                        <symbol id="icon-grid" viewBox="0 0 32 32">
+                           <path d="M0 0h8.656v8.656h-8.656z"></path>
+                           <path d="M23.344 0h8.656v8.656h-8.656z"></path>
+                           <path d="M11.672 0h8.656v8.656h-8.656z"></path>
+                           <path d="M0 11.672h8.656v8.656h-8.656z"></path>
+                           <path d="M23.344 11.672h8.656v8.656h-8.656z"></path>
+                           <path d="M11.672 11.672h8.656v8.656h-8.656z"></path>
+                           <path d="M0 23.344h8.656v8.656h-8.656z"></path>
+                           <path d="M23.344 23.344h8.656v8.656h-8.656z"></path>
+                           <path d="M11.672 23.344h8.656v8.656h-8.656z"></path>
+                           </symbol>
+                     </svg>
+                  </div>
+                  <div class="switcher__item">
+                     <svg class="icon icon-list"><use xlink:href="#icon-list"></use>
+                        <symbol id="icon-list" viewBox="0 0 32 32">
+                           <path d="M0 3.25h7.081v7.081h-7.081z"></path>
+                           <path d="M9.331 3.25h22.669v7.081h-22.669z"></path>
+                           <path d="M0 12.438h7.081v7.081h-7.081z"></path>
+                           <path d="M9.331 12.438h22.669v7.081h-22.669z"></path>
+                           <path d="M0 21.626h7.081v7.081h-7.081z"></path>
+                           <path d="M9.331 21.626h22.669v7.081h-22.669z"></path>
+                           </symbol>
+                     </svg>
+                  </div>
+               </div>
+               <div class="record__body grid catalog">
+                  <div class="record__block grid__list">
+                     <div class="grid__item">
+                        <a href="#" class="grid__box grid-box">
+                           <div class="grid-box__img">
+                              <img src="img/list/01.jpg" alt="01">
+                           </div>
+                           <div class="grid-box__content">
+                              <div class="grid-box__info info-grid">
+                                 <span class="info-grid__title">Today</span>
+                                 <div class="info-grid__item">
+                                    <img src="img/svg/heart.svg" alt="like">
+                                    <span>128</span>
+                                 </div>
+                                 <div class="info-grid__item">
+                                    <img src="img/svg/comment.svg" alt="comment">
+                                    <span>31</span>
+                                 </div>
+                              </div>
+                              <div class="grid-box__info info-grid">
+                                 <span class="info-grid__title">09-04-20</span>
+                                 <div class="info-grid__item">
+                                    <img src="img/svg/heart.svg" alt="like">
+                                    <span>128</span>
+                                 </div>
+                                 <div class="info-grid__item">
+                                    <img src="img/svg/comment.svg" alt="comment">
+                                    <span>31</span>
+                                 </div>
+                              </div>
+                              <div class="grid-box__bottom">
+                                 Image upload: 11-04-2016
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="grid__item">
+                        <a href="#" class="grid__box grid-box">
+                           <div class="grid-box__img">
+                              <img src="img/list/02.jpg" alt="01">
+                           </div>
+                           <div class="grid-box__content">
+                              <div class="grid-box__info info-grid">
+                                 <span class="info-grid__title">Today</span>
+                                 <div class="info-grid__item">
+                                    <img src="img/svg/heart.svg" alt="like">
+                                    <span>128</span>
+                                 </div>
+                                 <div class="info-grid__item">
+                                    <img src="img/svg/comment.svg" alt="comment">
+                                    <span>31</span>
+                                 </div>
+                              </div>
+                              <div class="grid-box__info info-grid">
+                                 <span class="info-grid__title">09-04-20</span>
+                                 <div class="info-grid__item">
+                                    <img src="img/svg/heart.svg" alt="like">
+                                    <span>128</span>
+                                 </div>
+                                 <div class="info-grid__item">
+                                    <img src="img/svg/comment.svg" alt="comment">
+                                    <span>31</span>
+                                 </div>
+                              </div>
+                              <div class="grid-box__bottom">
+                                 Image upload: 11-04-2016
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="grid__item">
+                        <a href="#" class="grid__box grid-box">
+                           <div class="grid-box__img">
+                              <img src="img/list/03.jpg" alt="01">
+                           </div>
+                           <div class="grid-box__content">
+                              <div class="grid-box__info info-grid">
+                                 <span class="info-grid__title">Today</span>
+                                 <div class="info-grid__item">
+                                    <img src="img/svg/heart.svg" alt="like">
+                                    <span>128</span>
+                                 </div>
+                                 <div class="info-grid__item">
+                                    <img src="img/svg/comment.svg" alt="comment">
+                                    <span>31</span>
+                                 </div>
+                              </div>
+                              <div class="grid-box__info info-grid">
+                                 <span class="info-grid__title">09-04-20</span>
+                                 <div class="info-grid__item">
+                                    <img src="img/svg/heart.svg" alt="like">
+                                    <span>128</span>
+                                 </div>
+                                 <div class="info-grid__item">
+                                    <img src="img/svg/comment.svg" alt="comment">
+                                    <span>31</span>
+                                 </div>
+                              </div>
+                              <div class="grid-box__bottom">
+                                 Image upload: 11-04-2016
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="grid__item">
+                        <a href="#" class="grid__box grid-box">
+                           <div class="grid-box__img">
+                              <img src="img/list/04.jpg" alt="01">
+                           </div>
+                           <div class="grid-box__content">
+                              <div class="grid-box__info info-grid">
+                                 <span class="info-grid__title">Today</span>
+                                 <div class="info-grid__item">
+                                    <img src="img/svg/heart.svg" alt="like">
+                                    <span>128</span>
+                                 </div>
+                                 <div class="info-grid__item">
+                                    <img src="img/svg/comment.svg" alt="comment">
+                                    <span>31</span>
+                                 </div>
+                              </div>
+                              <div class="grid-box__info info-grid">
+                                 <span class="info-grid__title">09-04-20</span>
+                                 <div class="info-grid__item">
+                                    <img src="img/svg/heart.svg" alt="like">
+                                    <span>128</span>
+                                 </div>
+                                 <div class="info-grid__item">
+                                    <img src="img/svg/comment.svg" alt="comment">
+                                    <span>31</span>
+                                 </div>
+                              </div>
+                              <div class="grid-box__bottom">
+                                 Image upload: 11-04-2016
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="grid__item">
+                        <a href="#" class="grid__box grid-box">
+                           <div class="grid-box__img">
+                              <img src="img/list/05.jpg" alt="01">
+                           </div>
+                           <div class="grid-box__content">
+                              <div class="grid-box__info info-grid">
+                                 <span class="info-grid__title">Today</span>
+                                 <div class="info-grid__item">
+                                    <img src="img/svg/heart.svg" alt="like">
+                                    <span>128</span>
+                                 </div>
+                                 <div class="info-grid__item">
+                                    <img src="img/svg/comment.svg" alt="comment">
+                                    <span>31</span>
+                                 </div>
+                              </div>
+                              <div class="grid-box__info info-grid">
+                                 <span class="info-grid__title">09-04-20</span>
+                                 <div class="info-grid__item">
+                                    <img src="img/svg/heart.svg" alt="like">
+                                    <span>128</span>
+                                 </div>
+                                 <div class="info-grid__item">
+                                    <img src="img/svg/comment.svg" alt="comment">
+                                    <span>31</span>
+                                 </div>
+                              </div>
+                              <div class="grid-box__bottom">
+                                 Image upload: 11-04-2016
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="grid__item">
+                        <a href="#" class="grid__box grid-box">
+                           <div class="grid-box__img">
+                              <img src="img/list/06.jpg" alt="01">
+                           </div>
+                           <div class="grid-box__content">
+                              <div class="grid-box__info info-grid">
+                                 <span class="info-grid__title">Today</span>
+                                 <div class="info-grid__item">
+                                    <img src="img/svg/heart.svg" alt="like">
+                                    <span>128</span>
+                                 </div>
+                                 <div class="info-grid__item">
+                                    <img src="img/svg/comment.svg" alt="comment">
+                                    <span>31</span>
+                                 </div>
+                              </div>
+                              <div class="grid-box__info info-grid">
+                                 <span class="info-grid__title">09-04-20</span>
+                                 <div class="info-grid__item">
+                                    <img src="img/svg/heart.svg" alt="like">
+                                    <span>128</span>
+                                 </div>
+                                 <div class="info-grid__item">
+                                    <img src="img/svg/comment.svg" alt="comment">
+                                    <span>31</span>
+                                 </div>
+                              </div>
+                              <div class="grid-box__bottom">
+                                 Image upload: 11-04-2016
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="grid__item">
+                        <a href="#" class="grid__box grid-box">
+                           <div class="grid-box__img">
+                              <img src="img/list/07.jpg" alt="01">
+                           </div>
+                           <div class="grid-box__content">
+                              <div class="grid-box__info info-grid">
+                                 <span class="info-grid__title">Today</span>
+                                 <div class="info-grid__item">
+                                    <img src="img/svg/heart.svg" alt="like">
+                                    <span>128</span>
+                                 </div>
+                                 <div class="info-grid__item">
+                                    <img src="img/svg/comment.svg" alt="comment">
+                                    <span>31</span>
+                                 </div>
+                              </div>
+                              <div class="grid-box__info info-grid">
+                                 <span class="info-grid__title">09-04-20</span>
+                                 <div class="info-grid__item">
+                                    <img src="img/svg/heart.svg" alt="like">
+                                    <span>128</span>
+                                 </div>
+                                 <div class="info-grid__item">
+                                    <img src="img/svg/comment.svg" alt="comment">
+                                    <span>31</span>
+                                 </div>
+                              </div>
+                              <div class="grid-box__bottom">
+                                 Image upload: 11-04-2016
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="grid__item">
+                        <a href="#" class="grid__box grid-box">
+                           <div class="grid-box__img">
+                              <img src="img/list/08.jpg" alt="01">
+                           </div>
+                           <div class="grid-box__content">
+                              <div class="grid-box__info info-grid">
+                                 <span class="info-grid__title">Today</span>
+                                 <div class="info-grid__item">
+                                    <img src="img/svg/heart.svg" alt="like">
+                                    <span>128</span>
+                                 </div>
+                                 <div class="info-grid__item">
+                                    <img src="img/svg/comment.svg" alt="comment">
+                                    <span>31</span>
+                                 </div>
+                              </div>
+                              <div class="grid-box__info info-grid">
+                                 <span class="info-grid__title">09-04-20</span>
+                                 <div class="info-grid__item">
+                                    <img src="img/svg/heart.svg" alt="like">
+                                    <span>128</span>
+                                 </div>
+                                 <div class="info-grid__item">
+                                    <img src="img/svg/comment.svg" alt="comment">
+                                    <span>31</span>
+                                 </div>
+                              </div>
+                              <div class="grid-box__bottom">
+                                 Image upload: 11-04-2016
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="grid__item">
+                        <a href="#" class="grid__box grid-box">
+                           <div class="grid-box__img">
+                              <img src="img/list/09.jpg" alt="01">
+                           </div>
+                           <div class="grid-box__content">
+                              <div class="grid-box__info info-grid">
+                                 <span class="info-grid__title">Today</span>
+                                 <div class="info-grid__item">
+                                    <img src="img/svg/heart.svg" alt="like">
+                                    <span>128</span>
+                                 </div>
+                                 <div class="info-grid__item">
+                                    <img src="img/svg/comment.svg" alt="comment">
+                                    <span>31</span>
+                                 </div>
+                              </div>
+                              <div class="grid-box__info info-grid">
+                                 <span class="info-grid__title">09-04-20</span>
+                                 <div class="info-grid__item">
+                                    <img src="img/svg/heart.svg" alt="like">
+                                    <span>128</span>
+                                 </div>
+                                 <div class="info-grid__item">
+                                    <img src="img/svg/comment.svg" alt="comment">
+                                    <span>31</span>
+                                 </div>
+                              </div>
+                              <div class="grid-box__bottom">
+                                 Image upload: 11-04-2016
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="record__block catalog__list">
+                     <div class="catalog__item">
+                        <a href="#" class="catalog__box catalog-box">
+                           <div class="catalog-box__img">
+                              <img src="img/list/01s.jpg" alt="01s">
+                           </div>
+                           <div class="catalog-box__content">
+                              <div class="catalog-box__info info-catalog">
+                                 <div class="info-catalog__title">Today</div>
+                                 <div class="info-catalog__item">
+                                    <img src="img/svg/heart-d.svg" alt="like">
+                                    <span>128</span>
+                                 </div>
+                                 <div class="info-catalog__item">
+                                    <img src="img/svg/comment-d.svg" alt="comment">
+                                    <span>31</span>
+                                 </div>
+                              </div>
+                              <div class="catalog-box__info info-catalog">
+                                 <div class="info-catalog__title">09-08-2016</div>
+                                 <div class="info-catalog__item">
+                                    <img src="img/svg/heart-d.svg" alt="like">
+                                    <span>128</span>
+                                 </div>
+                                 <div class="info-catalog__item">
+                                    <img src="img/svg/comment-d.svg" alt="comment">
+                                    <span>31</span>
+                                 </div>
+                              </div>
+                              <div class="catalog-box__info info-catalog">
+                                 <div class="info-catalog__title">Image upload</div>
+                                 <div class="info-catalog__item">
+                                    <span>11-04-2016</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="catalog__item">
+                        <a href="#" class="catalog__box catalog-box">
+                           <div class="catalog-box__img">
+                              <img src="img/list/02s.jpg" alt="01s">
+                           </div>
+                           <div class="catalog-box__content">
+                              <div class="catalog-box__info info-catalog">
+                                 <div class="info-catalog__title">Today</div>
+                                 <div class="info-catalog__item">
+                                    <img src="img/svg/heart-d.svg" alt="like">
+                                    <span>128</span>
+                                 </div>
+                                 <div class="info-catalog__item">
+                                    <img src="img/svg/comment-d.svg" alt="comment">
+                                    <span>31</span>
+                                 </div>
+                              </div>
+                              <div class="catalog-box__info info-catalog">
+                                 <div class="info-catalog__title">09-08-2016</div>
+                                 <div class="info-catalog__item">
+                                    <img src="img/svg/heart-d.svg" alt="like">
+                                    <span>128</span>
+                                 </div>
+                                 <div class="info-catalog__item">
+                                    <img src="img/svg/comment-d.svg" alt="comment">
+                                    <span>31</span>
+                                 </div>
+                              </div>
+                              <div class="catalog-box__info info-catalog">
+                                 <div class="info-catalog__title">Image upload</div>
+                                 <div class="info-catalog__item">
+                                    <span>11-04-2016</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="catalog__item">
+                        <a href="#" class="catalog__box catalog-box">
+                           <div class="catalog-box__img">
+                              <img src="img/list/03s.jpg" alt="01s">
+                           </div>
+                           <div class="catalog-box__content">
+                              <div class="catalog-box__info info-catalog">
+                                 <div class="info-catalog__title">Today</div>
+                                 <div class="info-catalog__item">
+                                    <img src="img/svg/heart-d.svg" alt="like">
+                                    <span>128</span>
+                                 </div>
+                                 <div class="info-catalog__item">
+                                    <img src="img/svg/comment-d.svg" alt="comment">
+                                    <span>31</span>
+                                 </div>
+                              </div>
+                              <div class="catalog-box__info info-catalog">
+                                 <div class="info-catalog__title">09-08-2016</div>
+                                 <div class="info-catalog__item">
+                                    <img src="img/svg/heart-d.svg" alt="like">
+                                    <span>128</span>
+                                 </div>
+                                 <div class="info-catalog__item">
+                                    <img src="img/svg/comment-d.svg" alt="comment">
+                                    <span>31</span>
+                                 </div>
+                              </div>
+                              <div class="catalog-box__info info-catalog">
+                                 <div class="info-catalog__title">Image upload</div>
+                                 <div class="info-catalog__item">
+                                    <span>11-04-2016</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="catalog__item">
+                        <a href="#" class="catalog__box catalog-box">
+                           <div class="catalog-box__img">
+                              <img src="img/list/04s.jpg" alt="01s">
+                           </div>
+                           <div class="catalog-box__content">
+                              <div class="catalog-box__info info-catalog">
+                                 <div class="info-catalog__title">Today</div>
+                                 <div class="info-catalog__item">
+                                    <img src="img/svg/heart-d.svg" alt="like">
+                                    <span>128</span>
+                                 </div>
+                                 <div class="info-catalog__item">
+                                    <img src="img/svg/comment-d.svg" alt="comment">
+                                    <span>31</span>
+                                 </div>
+                              </div>
+                              <div class="catalog-box__info info-catalog">
+                                 <div class="info-catalog__title">09-08-2016</div>
+                                 <div class="info-catalog__item">
+                                    <img src="img/svg/heart-d.svg" alt="like">
+                                    <span>128</span>
+                                 </div>
+                                 <div class="info-catalog__item">
+                                    <img src="img/svg/comment-d.svg" alt="comment">
+                                    <span>31</span>
+                                 </div>
+                              </div>
+                              <div class="catalog-box__info info-catalog">
+                                 <div class="info-catalog__title">Image upload</div>
+                                 <div class="info-catalog__item">
+                                    <span>11-04-2016</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="catalog__item">
+                        <a href="#" class="catalog__box catalog-box">
+                           <div class="catalog-box__img">
+                              <img src="img/list/05s.jpg" alt="01s">
+                           </div>
+                           <div class="catalog-box__content">
+                              <div class="catalog-box__info info-catalog">
+                                 <div class="info-catalog__title">Today</div>
+                                 <div class="info-catalog__item">
+                                    <img src="img/svg/heart-d.svg" alt="like">
+                                    <span>128</span>
+                                 </div>
+                                 <div class="info-catalog__item">
+                                    <img src="img/svg/comment-d.svg" alt="comment">
+                                    <span>31</span>
+                                 </div>
+                              </div>
+                              <div class="catalog-box__info info-catalog">
+                                 <div class="info-catalog__title">09-08-2016</div>
+                                 <div class="info-catalog__item">
+                                    <img src="img/svg/heart-d.svg" alt="like">
+                                    <span>128</span>
+                                 </div>
+                                 <div class="info-catalog__item">
+                                    <img src="img/svg/comment-d.svg" alt="comment">
+                                    <span>31</span>
+                                 </div>
+                              </div>
+                              <div class="catalog-box__info info-catalog">
+                                 <div class="info-catalog__title">Image upload</div>
+                                 <div class="info-catalog__item">
+                                    <span>11-04-2016</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="catalog__item">
+                        <a href="#" class="catalog__box catalog-box">
+                           <div class="catalog-box__img">
+                              <img src="img/list/06s.jpg" alt="01s">
+                           </div>
+                           <div class="catalog-box__content">
+                              <div class="catalog-box__info info-catalog">
+                                 <div class="info-catalog__title">Today</div>
+                                 <div class="info-catalog__item">
+                                    <img src="img/svg/heart-d.svg" alt="like">
+                                    <span>128</span>
+                                 </div>
+                                 <div class="info-catalog__item">
+                                    <img src="img/svg/comment-d.svg" alt="comment">
+                                    <span>31</span>
+                                 </div>
+                              </div>
+                              <div class="catalog-box__info info-catalog">
+                                 <div class="info-catalog__title">09-08-2016</div>
+                                 <div class="info-catalog__item">
+                                    <img src="img/svg/heart-d.svg" alt="like">
+                                    <span>128</span>
+                                 </div>
+                                 <div class="info-catalog__item">
+                                    <img src="img/svg/comment-d.svg" alt="comment">
+                                    <span>31</span>
+                                 </div>
+                              </div>
+                              <div class="catalog-box__info info-catalog">
+                                 <div class="info-catalog__title">Image upload</div>
+                                 <div class="info-catalog__item">
+                                    <span>11-04-2016</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="catalog__item">
+                        <a href="#" class="catalog__box catalog-box">
+                           <div class="catalog-box__img">
+                              <img src="img/list/07s.jpg" alt="01s">
+                           </div>
+                           <div class="catalog-box__content">
+                              <div class="catalog-box__info info-catalog">
+                                 <div class="info-catalog__title">Today</div>
+                                 <div class="info-catalog__item">
+                                    <img src="img/svg/heart-d.svg" alt="like">
+                                    <span>128</span>
+                                 </div>
+                                 <div class="info-catalog__item">
+                                    <img src="img/svg/comment-d.svg" alt="comment">
+                                    <span>31</span>
+                                 </div>
+                              </div>
+                              <div class="catalog-box__info info-catalog">
+                                 <div class="info-catalog__title">09-08-2016</div>
+                                 <div class="info-catalog__item">
+                                    <img src="img/svg/heart-d.svg" alt="like">
+                                    <span>128</span>
+                                 </div>
+                                 <div class="info-catalog__item">
+                                    <img src="img/svg/comment-d.svg" alt="comment">
+                                    <span>31</span>
+                                 </div>
+                              </div>
+                              <div class="catalog-box__info info-catalog">
+                                 <div class="info-catalog__title">Image upload</div>
+                                 <div class="info-catalog__item">
+                                    <span>11-04-2016</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="catalog__item">
+                        <a href="#" class="catalog__box catalog-box">
+                           <div class="catalog-box__img">
+                              <img src="img/list/08s.jpg" alt="01s">
+                           </div>
+                           <div class="catalog-box__content">
+                              <div class="catalog-box__info info-catalog">
+                                 <div class="info-catalog__title">Today</div>
+                                 <div class="info-catalog__item">
+                                    <img src="img/svg/heart-d.svg" alt="like">
+                                    <span>128</span>
+                                 </div>
+                                 <div class="info-catalog__item">
+                                    <img src="img/svg/comment-d.svg" alt="comment">
+                                    <span>31</span>
+                                 </div>
+                              </div>
+                              <div class="catalog-box__info info-catalog">
+                                 <div class="info-catalog__title">09-08-2016</div>
+                                 <div class="info-catalog__item">
+                                    <img src="img/svg/heart-d.svg" alt="like">
+                                    <span>128</span>
+                                 </div>
+                                 <div class="info-catalog__item">
+                                    <img src="img/svg/comment-d.svg" alt="comment">
+                                    <span>31</span>
+                                 </div>
+                              </div>
+                              <div class="catalog-box__info info-catalog">
+                                 <div class="info-catalog__title">Image upload</div>
+                                 <div class="info-catalog__item">
+                                    <span>11-04-2016</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="catalog__item">
+                        <a href="#" class="catalog__box catalog-box">
+                           <div class="catalog-box__img">
+                              <img src="img/list/09s.jpg" alt="01s">
+                           </div>
+                           <div class="catalog-box__content">
+                              <div class="catalog-box__info info-catalog">
+                                 <div class="info-catalog__title">Today</div>
+                                 <div class="info-catalog__item">
+                                    <img src="img/svg/heart-d.svg" alt="like">
+                                    <span>128</span>
+                                 </div>
+                                 <div class="info-catalog__item">
+                                    <img src="img/svg/comment-d.svg" alt="comment">
+                                    <span>31</span>
+                                 </div>
+                              </div>
+                              <div class="catalog-box__info info-catalog">
+                                 <div class="info-catalog__title">09-08-2016</div>
+                                 <div class="info-catalog__item">
+                                    <img src="img/svg/heart-d.svg" alt="like">
+                                    <span>128</span>
+                                 </div>
+                                 <div class="info-catalog__item">
+                                    <img src="img/svg/comment-d.svg" alt="comment">
+                                    <span>31</span>
+                                 </div>
+                              </div>
+                              <div class="catalog-box__info info-catalog">
+                                 <div class="info-catalog__title">Image upload</div>
+                                 <div class="info-catalog__item">
+                                    <span>11-04-2016</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="loadmore">
+            <button class="loadmore__btn" type="button">Load more</button>
+         </div>
       </main>
    </div>
 
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://unpkg.com/js-datepicker"></script>
    <script src="js/libs.min.js"></script>
    <script src="js/main.js"></script>
 

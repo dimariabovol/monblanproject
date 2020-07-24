@@ -3,9 +3,12 @@ $(document).ready(function(){
 });
 
 function tab() {
-   $(".tab__info").not(":first").hide();
-   $(".tab .tab__item").click(function() {
-      $(".tab .tab__item").removeClass("tab__item_active").eq($(this).index()).addClass("tab__item_active");
-      $(".tab__info").hide().eq($(this).index()).fadeIn();
+   $(".record__block").not(":first").hide();
+   $(".switcher .switcher__item").click(function() {
+      $(".switcher .switcher__item").removeClass("switcher__item_active").eq($(this).index()).addClass("switcher__item_active");
+      $(".record__block").hide().eq($(this).index()).fadeIn();
    });
 }
+
+const start = datepicker('.header-form__input_start', { id: 1 })
+const end = datepicker('.header-form__input_end', { id: 1 })
