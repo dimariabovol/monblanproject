@@ -1,6 +1,6 @@
 # monblanproject
 
-[Link](https://dimariabovol.github.io/monblanproject/) on site.
+[Here](https://dimariabovol.github.io/monblanproject/) is link to the site.
 
 Ditepicker I made by means of [js-datepicker](https://www.npmjs.com/package/js-datepicker) plugin. I linked 2 calendars together by both the same id.
 
